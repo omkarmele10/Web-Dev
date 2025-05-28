@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inlin-section: 20px;
+}
+
+body {
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    /* ul se sare dot circle hata diye */
+}
+
+/* utility classes */
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow:hidden;
+
+    /* it is used to center a element in horizontal */
+    padding-inline: var(--padding-inlin-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+    /* transition kuch dino me karna hai */
+}
+
+.primary-button {
+    color: white !important;
+    background-color: var(--accent-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    border:0.5px solid black;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    color:var(--accent-color) ;
+    border-color:var(--accent-color);
+} 
+
+/* top banner  */
+.top-banner {
+    background-color: #4fb3d4;
+    background-image:url(./assets/asset\ 18.png) ;
+    background-size:300px;
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav */
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+    position:relative;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+/*  humberg icon */
+.nav-toggle{
+    display: none;
+}
+
+/* header section */
+header{
+    padding: 50px var(--padding-inlin-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap:50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-button{
+    margin:20px;
+}
+.header-right img{
+    width:100%;
+}
+
+/* companies section */
+.companies-header{
+    text-align: center;
+    margin-block:30px ;
+    color:var(--primary-text-color);
+    font-size:1rem;
+}
+.logos{
+    justify-content: space-between;
+}
+.logo{
+    height:46px;
+}
+
+/* features section */
+.features-section{
+    padding:80px var(--padding-inlin-section) 0;
+    background-image: url(./assets/asset\ 19.svg);
+    background-repeat:no-repeat;
+    background-position:center ;
+}
+.features-header{
+    text-align: center;
+    margin-bottom:20px;
+}
+.features-heading-h2{
+    margin-bottom:20px;
+}
+.features-area{
+    margin-top: 20px;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+    gap:20px;
+}
+.features-card{
+    flex-direction: column;
+    gap:20px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-card img{
+    width:40px;
+}
+
+/* another features 1-3 */
+.another-feature{
+    padding: 30px var(--padding-inlin-section) 0;
+}
+
+.another-feature-container{
+    gap:30px;
+}
+.another-feature-photo img{
+    width:100%;
+}
+.another-fea-des{
+    flex-direction: column;
+    align-items: center;
+}
+/* exmaple section  */
+.examples-header{
+    margin:40px;
+    text-align: center;
+}
+.examples-header a{
+    margin:20px;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background:black;
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 20.jpeg);
+    transition: 0.2s ease-out;
+}
+
+.examples-card:nth-child(2){
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 21.jpeg);
+     background-size: cover;  /*abhi iska koi khas anatar samjh nahi aaya hai*/
+}
+.examples-card:nth-child(3){
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 22.jpeg);
+    background-size: cover;  
+}
+.examples-card:nth-child(4){
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 23.jpeg);
+    background-size: cover;  
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+/* .examples-card2{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background:black;
+    // ye neeche wali line bas add kare hai nthchild wale me 
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 21.jpeg);
+}
+.examples-card3{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background:black;
+   
+}
+.examples-card4{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background:black;
+    
+} */
+.card-text{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    /* margin:20px; */
+    color:white;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+/* cta section */
+.cta-sec{
+    flex-direction: column;
+    gap:40px;
+    color:white;
+}
+.cta-section{
+     background-color: #183b56;
+     padding:90px var(--padding-inlin-section);
+}
+.cta-sec p{
+    color:white;
+}
+
+/* footer section */
+.link-column{
+    flex-direction: column; 
+    align-items: flex-start;
+    gap:20px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer{
+    padding:80px;
+    background-color:#ebf2fa;
+}
+.sub-footer{
+    background-color:#b9cde4;
+    padding: 20px;
+}
+.subfooter-container{
+    justify-content: center;
+    gap:30px;
+}
