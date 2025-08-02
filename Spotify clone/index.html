@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pip" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sideBar">
+            <div class="upperSideBar">
+                <div class="nav">
+                    <a class="a_with_text" href="#"><i class="fa-solid fa-house"></i> Home </a>
+                    <a class="a_with_text" href="#"> <i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                </div>
+            </div>
+            <div class="lowerSideBar">
+                <div class="library">
+                    <div class="your_library_navigation">
+                        <div class="your_library">
+                            <a class="a_with_text" href="#"> <img src="./assets/library_icon.png"> Your Library </a>
+                        </div>
+                        <div class="navigation">
+                            <a class="a_with_text" href="#"><i class="fa-solid fa-plus"></i> </a>
+                            <a class="a_with_text" href="#"><i class="fa-solid fa-arrow-right-long"></i> </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Create your first playlist</h2>
+                        <p>It's easy,we'll help you</p>
+                        <p class="button"> Create Playlist</p>
+                    </div>
+
+                </div>
+
+                <div class="podcasts">
+                    <div class="card">
+                        <h2>Let's find some podcasts to follow</h2>
+                        <p>We'll keep you updated on new episodes</p>
+                        <p class="button"> Browse podcasts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_nav">
+                <div class="left_nav">
+                    <img src="./assets/backward_icon.png">
+                    <img class="hide" src="./assets/forward_icon.png">
+                </div>
+                <div class="right_nav">
+                    <button class="button hide">Upgrade </button>
+                    <button class="button install_btn "><i class="fa-regular fa-circle-down"></i> Install App </button>
+                    <button class="button user_btn "><i class="fa-regular fa-user"></i> </button>
+
+                </div>
+            </div>
+            <div class="album_cards">
+                <h2> Recently Played</h2>
+                <div class="album_card">
+                    <img src="./assets/card1img.jpeg">
+                    <h3 class="high_opacity">Top 50 Global</h3>
+                    <p>your daily update for the most played tracks right </p>
+                </div>
+                <h2>Spotify Orignal & exclusive podcasts</h2>
+                <div class="album_list1 album_list ">
+                    <div class="album_card">
+                        <img src="./assets/card2img.jpeg">
+                        <h3 class="high_opacity">Tue Story Bro! with Tr...</h3>
+                        <p>Spotify </p>
+                    </div>
+                    <div class="album_card">
+                        <img src="./assets/card3img.jpeg">
+                        <h3 class="high_opacity">Decode Dil with Ekta</h3>
+                        <p>Spotify Studios</p>
+                    </div>
+                    <div class="album_card">
+                        <img src="./assets/card4img.jpeg">
+                        <h3 class="high_opacity">The Horror Show by K...</h3>
+                        <p>TMV Studios </p>
+                    </div>
+                </div>
+                <h2>Featured Charts</h2>
+                <div class="album_list2 album_list">
+                    <div class="album_card">
+                        <img src="./assets/card5img.jpeg">
+                        <h3 class="high_opacity">Top 50- Global</h3>
+                        <p>Spotify </p>
+                    </div>
+                    <div class="album_card">
+                        <img src="./assets/card6img.jpeg">
+                        <h3 class="high_opacity">Top 50-Global</h3>
+                        <p>Spotify Studios</p>
+                    </div>
+                    <div class="album_card">
+                        <img src="./assets/card1img.jpeg">
+                        <h3 class="high_opacity">Top 50-Global</h3>
+                        <p>TMV Studios </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+        <div class="music_player">
+            <div class="left">
+                <div class="logo">
+                    <img src="./assets/card5img.jpeg">
+                </div>
+                <div class="details">
+                    <h2 class="">Daylight</h2>
+                    <p> David kushner</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-regular fa-heart player_icons"></i>
+                    <span class="material-symbols-outlined player_icons">pip</span>
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player_icon">
+                    <img src="./assets/player_icon1.png" class="player_icons" alt="">
+                    <img src="./assets/player_icon2.png" class="player_icons" alt="">
+                    <img src="./assets/player_icon3.png" class="player_icons big high_opacity" alt="">
+                    <img src="./assets/player_icon4.png" class="player_icons" alt="">
+                    <img src="./assets/player_icon5.png" class="player_icons" alt="">
+                </div>
+
+                <div class="playback_bar">
+                    <span class="curr_time">00:00</span>
+                    <input type="range" min="0" max="100">
+                    <span class="curr_time high_opacity">03:49</span>
+                </div>
+            </div>
+
+            <div class="right">
+                <i class="fa-solid fa-circle-stop player_icons"></i>
+                <i class="fa-solid fa-microphone player_icons "></i>
+                <i class="fa-solid fa-bars player_icons"></i>
+                <i class="fa-solid fa-mobile-screen player_icons"></i>
+                <i class="fa-solid fa-volume-xmark player_icons"></i>
+                <div class="playback_bar">
+                    <input type="range" min="0" max="100">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

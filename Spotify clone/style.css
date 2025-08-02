@@ -1,0 +1,223 @@
+* {
+    box-sizing:border-box;
+    color:white;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+.high_opacity{
+    opacity: 1;
+}
+.container{
+    display: flex;
+    /* height: 100vh; */
+    background-color: black;
+    gap:10px;
+    box-sizing:border-box;
+    color:black;
+}
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 80vh;
+    
+    gap:20px;
+    padding:5px;
+    background-color:black;
+    /* rgb(56, 56, 56); */
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color:#121212;;
+    padding:20px;
+    gap:10px;
+    border-radius: 10px;
+}
+.a_with_text{
+    display:flex;
+    gap:20px;
+}
+.library{
+     background-color: #121212;
+    border-radius:10px; 
+}
+.lowerSideBar{
+    height:100%;
+    border-radius: 10px;
+     background-color: #121212;
+}
+.your_library_navigation{
+    display: flex;
+    justify-content:space-between;  
+     background-color: #121212;
+    /* background-color: black; */
+    border-radius: 10px;
+    padding :20px;
+    gap:10px;border-radius:10px;
+}
+.your_library img{
+    max-width: 10%;
+    height: 20%;
+}
+.navigation{
+    display: flex;
+    gap:20px;
+}
+.card{
+    border-radius:10px;
+    margin:10px;
+    padding: 10px;
+    background-color:#232323;
+    color:white;
+      
+}
+.button{
+    color:black;
+    display: inline-block;
+    padding:9px;
+    background-color: white;
+    border-radius:20px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 20px;
+    background-color: black;
+    overflow: auto;
+    /* overflow : auto very usefull : isse last me content overflow hote rahta hai */
+}
+
+/* main section */
+.main_nav{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+    
+}
+.left_nav{
+    display: flex;
+    gap:10px;
+    margin : 1rem;
+}
+.right_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+} 
+.right_nav button{
+    margin-right: 10px;
+}
+.install_btn{
+    color:white;
+    background-color: black;
+}
+/* .user_btn{
+    background-color: black;
+} */
+@media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+/* album card section */
+.album_cards p,h2,h3{
+color:white;
+}
+.album_card img{
+    height:200px;
+    border-radius: 9px;
+}
+.album_card{
+    padding:10px;
+    width: 220px;
+    /* color:white; */
+    background-color:#232323;
+    border-radius: 10px;
+    margin: 1.5rem;
+}
+.album_list{
+    display:flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+
+}
+.footer{
+    height: 300px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 30%;
+    border-top:2px solid white;
+    opacity: 0.4;
+
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+}
+.music_player{
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* z-index: 1; */
+}
+.logo img{
+    max-height: 80px;
+}
+.logo{
+    /* max-width:10px; */
+    /* max-height: 10px; */
+    padding:2px;
+}
+.left{
+    width: 25%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.player_icons{
+height:1rem;
+margin-right: 2rem;
+}
+.big{
+    margin-top: 20px;
+    height: 2rem;
+}
+.playback_bar{
+    margin-top: 15px;
+}
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.right{
+    width: 25%;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
