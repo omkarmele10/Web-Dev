@@ -1,2 +1,2 @@
-it is simple GUI ( graphical use interface ) calculator 
-it perform basic arithmetic operation's
+ here are some basic front-end development projects 
+ 
